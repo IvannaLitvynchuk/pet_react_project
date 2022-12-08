@@ -2,7 +2,11 @@ import React from "react";
 
 const MyBooks = () => {
     return (
-        <div>my  page myBooks</div>
+        <div className="container">
+            <div className="bg-my-books">
+
+            </div>
+        </div>
     )
 }
 export default MyBooks;

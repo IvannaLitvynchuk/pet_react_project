@@ -2,7 +2,11 @@ import React from "react";
 
 const Bucket = () => {
     return (
-        <div>my  page bucket</div>
+        <div className="container">
+            <div className="bg-bucket">
+
+            </div>
+        </div>
     )
 }
 export default Bucket;
