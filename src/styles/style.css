@@ -25,6 +25,7 @@
     position: fixed;
     top: 0;
     z-index: 10;
+
 }
 .logo {
     font-size: 25px;
@@ -112,4 +113,17 @@ nav a:focus, nav a:hover, nav a:active {
     font-size: 40px;
     font-weight: bolder;
     color: var(--text-color-darkblue);
+}
+.products-box {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 25px 25px 25px;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+.product-item {
+    width: 300px;
+    height: 300px;
+    background-color: #087096;
 }

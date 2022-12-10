@@ -1,17 +1,24 @@
-import { resolve } from "path";
+
 import React from "react";
+import { Product } from "../components/Product";
+import { useProduct } from "../hook/products";
+import { ErrorMessage } from "../components/ErrorMessage";
+import { Loader } from "../components/Loader";
 
 
 
 const Store = () => {
-    const fakeProduktList = fetch("https://fakestoreapi.com/products").then((resolve) => (resolve.json())).then((json) => console.log(json))
-    console.log(fakeProduktList)
+    const { products, addProduct, loading, error} = useProduct()
+
+    
     return (
         <div className="container">
             <div className="bg-store">
                 <h1 className="title-page-store">Store books</h1>
-                <div>
-                    {/* {fakeProduktList.map(product => product.id)} */}
+                <div className="products-box">
+                    {loading && <Loader />}
+                    { error && <ErrorMessage error={error} /> }
+                    {products.map(product => <Product product={product} key={product.id} /> )}
                 </div>
             </div>
         </div>
