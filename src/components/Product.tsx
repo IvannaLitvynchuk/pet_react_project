@@ -7,8 +7,10 @@ interface ProductProps {
 export function Product({ product }: ProductProps) {
     return (
         <div className="product-item">
-            {product.title}
-            <img src={product.image} style={{width: "100px", height: "100px"}} />
+            <img className="product-img" src={product.image} />
+            <p className="product-title">{product.title}</p>
+            <p className="product-price">{product.price}$</p>
+            <button className="product-btn">show details</button>
         </div>
     )
 }
