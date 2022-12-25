@@ -81,8 +81,9 @@ nav a:focus, nav a:hover, nav a:active {
 }
 .bg-store {
     width: 100%;
-    height: auto;
+    height: 100vh;
     background-color: var(--bg-main-blue);
+    overflow: auto;
 }
 .bg-my-books {
     width: 100%;
@@ -188,7 +189,7 @@ nav a:focus, nav a:hover, nav a:active {
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(132, 131, 131, 0.5);
 }
 .modal-content {
     width: 500px;
@@ -197,7 +198,7 @@ nav a:focus, nav a:hover, nav a:active {
     background-color: var(--text-color-white);
     position: absolute;
     top: 10;
-    left: 50%;
+    
     
 }
 .modal-title {
