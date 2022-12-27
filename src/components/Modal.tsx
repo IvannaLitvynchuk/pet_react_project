@@ -11,6 +11,7 @@ export function Modal({children, title, onClose}: ModalProps) {
         <>
             <div className="modal-bg" onClick={onClose}></div>
             <div className="modal-content">
+                <button className="btn-modal-close" onClick={onClose}>X</button>
                 <h1 className="modal-title">{ title }</h1>
                 { children }
             </div>

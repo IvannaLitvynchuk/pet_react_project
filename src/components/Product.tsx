@@ -31,7 +31,16 @@ export function Product({ product }: ProductProps) {
         <>
             {modal &&
                 <Modal title={product.title} onClose={close}>
-                    <p>{product.description}</p>
+                    <div>
+                        <img className="product-img" src={product.image} />
+                        <p className="product-price">{product.price}$</p>
+                        <p className="product-description">{product.description}</p>
+                        <div className="product-rating">
+                            <p>Rate: <span>{product.rating.rate}</span></p>
+                            <p>Count: <span>{product.rating.count}</span></p>
+                        </div>
+                    </div>
+                    
                 </Modal>
             }
         </>

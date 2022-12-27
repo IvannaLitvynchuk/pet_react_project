@@ -185,24 +185,35 @@ nav a:focus, nav a:hover, nav a:active {
 
 .modal-bg {
     position: fixed;
-    top: 0; 
-    bottom: 0;
-    right: 0;
     left: 0;
-    background: rgba(132, 131, 131, 0.5);
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 .modal-content {
     width: 500px;
     padding: 5px;
     border-radius: 25px;
     background-color: var(--text-color-white);
-    position: absolute;
-    top: 10;
-    
-    
+    margin: auto;
+    z-index: 20;
+    text-align: center;
 }
 .modal-title {
     text-align: center;
     font-size: medium;
+    margin-top: 20px;
     margin-bottom: 20px;
+}
+.product-rating {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.btn-modal-close {
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+    cursor: pointer;
 }
