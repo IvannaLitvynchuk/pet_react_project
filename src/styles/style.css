@@ -129,7 +129,6 @@ nav a:focus, nav a:hover, nav a:active {
     margin: auto;
 }
 .product-item {
-    position: relative;
     height: 400px;
     background-color: #f1f5f7;
     display: flex;
@@ -189,18 +188,21 @@ nav a:focus, nav a:hover, nav a:active {
 .modal-bg {
     position: fixed;
     left: 0;
+    padding-top: 200px;
     top: 0;
     width: 100%;
     height: 100%; 
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    z-index: 1;
 }
 .modal-content {
+    position: relative;
     width: 500px;
     padding: 5px;
     border-radius: 25px;
     background-color: var(--text-color-white);
     margin: auto;
-    z-index: 20;
+    z-index: 10;
     text-align: center;
 }
 .modal-title {
@@ -215,10 +217,14 @@ nav a:focus, nav a:hover, nav a:active {
     padding: 20px;
 }
 .btn-modal-close {
-    display: flex;
-    justify-content: flex-end;
+    color: black;
+    float: right;
+    font-size: 25px;
+    font-weight: bolder;
     border: none;
+    background-color: transparent;
     cursor: pointer;
+    padding: 5px 10px;
 }
 .btn-add-book{
     border: 1px solid var(--text-color-green);
@@ -229,4 +235,20 @@ nav a:focus, nav a:hover, nav a:active {
     border-radius: 10px;
     background-color: transparent;
     margin-left: 20px;
+}
+.create-title {
+    border: 1px solid rgb(87, 175, 83);
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    outline: 0;
+    width: max-content;
+}
+.btn-create {
+    margin-left: 10px;
+    border: none;
+    background-color: #51c77c;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
