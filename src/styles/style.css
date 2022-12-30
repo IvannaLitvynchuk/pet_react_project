@@ -9,6 +9,7 @@
     --text-color-pink: #990243;
     --text-color-white: #f7f7f7;
     --text-color-darkblue: #087096;
+    --text-color-green: #003f17;
     --bg-main-pink: #f590bc;
     --bg-main-blue: #7edaf7;
     --bg-main-orange: #f7b27e;
@@ -111,7 +112,9 @@ nav a:focus, nav a:hover, nav a:active {
 }
 .title-page-store {
     padding-top: 150px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 40px;
     font-weight: bolder;
     color: var(--text-color-darkblue);
@@ -216,4 +219,14 @@ nav a:focus, nav a:hover, nav a:active {
     justify-content: flex-end;
     border: none;
     cursor: pointer;
+}
+.btn-add-book{
+    border: 1px solid var(--text-color-green);
+    cursor: pointer;
+    font-size: 25px;
+    color: var(--text-color-green);
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    margin-left: 20px;
 }
