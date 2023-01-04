@@ -25,16 +25,18 @@ const Store = () => {
         <div className="container">
             <div className="bg-store">
                 <h1 className="title-page-store">Store books <button className="btn-add-book" onClick={open}>+</button></h1>
-                <div className="products-box">
-                    {modal && 
+                {modal && 
                         <Modal title="Create new Book" onClose={close}>
                             <CreateProduct onCreate={createHandler} />
                         </Modal>
                     }
+                <div className="products-box">
+                    
                     {loading && <Loader />}
                     { error && <ErrorMessage error={error} /> }
                     {products.map(product => <Product product={product} key={product.id} /> )}
                 </div>
+                
             </div>
         </div>
     )

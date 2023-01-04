@@ -10,13 +10,13 @@ export function Modal({children, title, onClose}: ModalProps) {
     return (
         <>
             <div className="modal-bg" onClick={onClose}>
-                <div className="modal-content">
+                
+            </div>
+            <div className="modal-content">
                     <button className="btn-modal-close" onClick={onClose}>&times;</button>
                     <h1 className="modal-title">{ title }</h1>
                     { children }
                 </div>
-            </div>
-            
         </>
     )
 }
